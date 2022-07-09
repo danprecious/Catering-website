@@ -9,7 +9,7 @@ let closeButton = document.querySelector(".closebtn")
 bars.addEventListener("click", function (){
     bars.style.display = "none";
     navB.style.display = "block";
-    // navB.style.transition = "0.5s"
+    navB.style.transition = "0.5s"
     closeButton.style.display = "block";
     navBlock.style.display = "block";
     navB.style.width = "250px";
