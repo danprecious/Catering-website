@@ -28,9 +28,9 @@ p{
     right: 0;
     top: 0;
     margin: 0;
-    width: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.925);
+    width: 0;
+    background-color: rgba(230, 255, 243, 0.925);
 }
 .navBar{
     /* display: none; */
@@ -109,6 +109,10 @@ header{
 .mg-top{
     margin-top: 2.7em;
 }
+.mg-tb{
+    margin-top: 1.2em;
+    margin-bottom: 2.2em;
+}
 .mg-n{
     margin: .9em;
 }
@@ -145,6 +149,9 @@ header{
 }
 .dis-none{
     display: none;
+}
+.width{
+    width: 100%;
 }
 .bg-image{
     width: 100%;
@@ -319,12 +326,154 @@ footer  i {
     margin: auto;
 }
 div{
- /*border: ;*/
+    /* border: 1px solid red; */
 }
 
 
 
-@media screen and (min-width: 600px) and (max-width: 2400px) {
+/* SERVICES TWEAKS */
+.mag-top{
+    margin-top: 10rem;
+}
+.buffet{
+    background-image: url(images/buffet.png);
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* margin-top: 10em; */
+}
+.overlays{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay{
+    width: 100%;
+    max-height: 25rem;
+    height: 30rem;
+}
+
+
+
+.overlay img{
+    width: 100%;
+    position: relative;
+}
+.lay1-bg{
+    background-image: url(images/overlay\ 1.jpg);
+}
+.lay2-bg{
+    background-image: url(images/lay2.jpg);
+}
+.lay3-bg{
+    background-image: url(images/lay3.png);
+}
+.lay4-bg{
+    background-image: url(images/lay4.webp);
+}
+.lay1{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 25rem;
+    
+}
+.lay1::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.767);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+.lay1::after{
+    content: "";
+    top: 45%;
+    position: absolute;
+    color: var(--cta--col);
+    /* left: 20%; */
+    font-size: 3rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.dis-abs{
+    display: absolute;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 600px) {
+    .overlays{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        place-items: center;
+        grid-gap: .5em;
+    }
+    .overlay{
+
+    }
+    .contact-elements{
+        display: grid;
+        place-items: center;
+    }
+    body{
+        /* background-color: black; */
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: visible;
+        max-height: fit-content;
+        position: relative;
+    }
+    nav ul{
+        display: flex;
+        position: relative;
+        padding: 0;
+        font-size: .5em;
+    }
+    .sec1-h1{
+        top: 40%;
+    }
+    .closebtn{
+        display: none;
+    }
+    .nav-b{
+        width: 100%;
+        position: relative;
+        background-color: transparent;
+        display: flex;
+        padding: 0;
+    }
+    .bars{
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+    .navBar{
+        display: block;
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px){
+    .overlays{
+        display: flex;
+        flex-direction: row;
+    }
+.ove-mag-top{
+    margin-top: 10rem;
+}
+.ove-mag-lr{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+    
     .sec2{
         display: flex;
         align-items: center;
@@ -332,6 +481,10 @@ div{
         margin: 2em 0;
         width: 100%;
         position: relative;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
     }
     .sec1-h1{
         top: 35%;
@@ -366,12 +519,15 @@ div{
     .navBar{
         display: block;
     }
+    nav ul{
+        font-size: 1.1em;
+    }
     .nav-b{
         /* display: none; */
         position: relative;
         width: 100%;
         background-color: transparent;
-
+        font-size: 1.1em;
     }
     nav{
         display: flex;
