@@ -10,6 +10,7 @@
     --cta--col : white;
     --fm--bg : rgb(249, 252, 249);
     --con-col: rgb(196, 223, 196);
+    --cta-contrast:  rgb(225, 236, 219);
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -82,6 +83,12 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.flex-col-sp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .flex-spa{
     display: flex;
     justify-content: space-between;
@@ -148,6 +155,9 @@ header{
 .col-white{
     color: var(--cta--col);
 }
+.cta-contrast{
+    background-color: var(--cta-contrast);
+}
 .dis-none{
     display: none;
 }
@@ -195,6 +205,12 @@ header{
 .sec2-w{
     width: 100%;
 }
+#contact{
+
+}
+html{
+    scroll-behavior: smooth;
+}
 .contact{
     background-color: var(--con-col);
     padding: 4em .2em;
@@ -225,9 +241,12 @@ header{
 }
 .cta2:hover{
     position: relative;
-    padding: 1.1em;
-    transition: .2s;
+    /* padding: 10px; */
+    transition: .7s;
     background-color: var(--hd2--col);
+    /* font-size: 2em; */
+    transform: rotate(360deg);
+    translate: x;
 }
 .btn{
     padding: .5em
@@ -257,7 +276,7 @@ header{
 .fm-card{
     background-color: var(--fm--bg);
 }
-input{
+.fm-card  input{
     width: 100%;
     outline: none;
     border: none;
@@ -268,8 +287,7 @@ input{
     font-size: medium;
     font-weight: 700;
     border-radius: 7px;
-    color: var(--hd--col);
-       
+    color: var(--hd--col);        
 }
 form{
     background-color: var(--fm--bg);
@@ -320,6 +338,10 @@ form > div{
 footer{
     padding: 1.5em;
     background-color: var(--hd--col);
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
 }
 footer  i {
     margin: .2em 1.2em;
@@ -356,9 +378,6 @@ div{
     max-height: 25rem;
     height: 30rem;
 }
-
-
-
 .overlay img{
     width: 100%;
     position: relative;
@@ -404,6 +423,56 @@ div{
 .dis-abs{
     display: absolute;
     z-index: 2;
+}
+
+
+
+/* ORDER TWEAKS */
+.mag-tb{
+    margin: 1.1em 0;
+}
+.width-50{
+    width: 50%;
+}
+.select-dish{
+    /* margin: 5px; */
+}
+.border{
+    border: none;
+    border-radius: 10px;
+}
+.select-dish  option{
+    background-color: var(--con-col);
+    text-align: center;
+    color: var(--hd--col);
+    outline: none;
+    border: none;
+}
+.sub-select{
+    margin: 0 5px;
+}
+.neg-mag-top{
+    margin-top: -1.5em;
+}
+.quantity{
+    background-color: var(--hd--col);
+}
+.ord-main{
+    background: linear-gradient( to right, rgba(0, 0, 0, 0.801),  rgba(0, 0, 0, 0.747)),   url(images/ord-main.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.order-form{
+    border-radius: 20px;
+    background-color: var(--cta--col);
+    margin: 4em 0;
+    max-height: 35rem;
+}
+.tel{
+    background-color: var(--cta-contrast);
+    font-style: italic;
 }
 
 @media only screen and (min-width: 600px) {
