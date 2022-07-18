@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+<body>
+    <header class="pad-lr z-index">
+        <div id="logo" class=""><img src="css/images/logo.png" alt=""></div>
+        <div id ="navBar" class="">
+            <nav class="nav-b">
+                <ul class="ul">
+                    <div class="txt-rt pad-n closebtn"><a href="javascript:void(0)" class="links"><h1>&times;</h1></a></div>
+                    <li><a href="index.html " class="links">Home</a></li>
+                    <li><a href="" class="links">Menu</a></li>
+                    <li><a href="" class="links txt-red">Place Order</a></li>
+                    <li><a href="services.html" class="links ">Services</a></li>
+                    <li><a href="" class="links">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bars"><button id="bars" class="links txt-green"><i class="fas fa-bars fa-2x"></button></i></div>
+    </header>
+    <main class="ord-main">
+        <div class="width pad-n flex-n">
+            <div class="">
+                <form action="!#" class="pad-n  order-form">
+                    <div class="txt-cen mag-tb txt-green"><h2>Place an order</h2></div>
+                    <div>
+                            <div>
+                                <select name="" id="" class="width pad-n border flex-n select-dish cta-contrast">
+                                    <option value="default">Select type...</option>
+                                    <option value="african">African dishes</option>
+                                    <option value="italian">Italian</option>
+                                    <option value="french">French deserts</option>
+                                    <option value="quickchops">Quick chops</option>
+                                </select>  
+                            </div>
+                        <div class="flex-r mag-tb">
+                            <select name="" id="" class="width-50 pad-n border sub-select cta-contrast"></select>
+                            <div class="width-50 quantity "><input type="number" name="" id="" class="width" min="1" max="10"></div>
+                        </div>
+
+                        <div>
+                            <input type="tel" placeholder="card-number" class="tel width pad-n border cta-contrast">
+                            <div class="flex-r mg-tb">
+                                <input type="month" class="tel border pad-n width-50 sub-select txt-rt">
+                                <input type="month" class="tel border pad-n width-50 sub-select txt-rt">
+                            </div>
+                        </div>
+                        
+                        <div class="txt-cen">
+                            <button class="cta2">Order now</button>
+                        </div>
+                        
+                    </div>
+                    <div class="flex-sp width">
+                        <div class="mg-n"><p>Help</p></div>
+                        <div class="mg-n">Faq</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer class="footer col-white">
+        <div class="flex-spa footer-links">
+            <div class="links"><h5>Order</h5></div>
+            <div class="links"><h5>Menu</h5></div>
+            <div class="links"><h5>About</h5></div>
+            <div class="links"><h5>Place Order</h5></div>
+            <div class="links"><h5>Services</h5></div>
+        </div>
+        <div class="flex-r hd-mg">
+            <div class="links"><i class="fab fa-facebook"></i></div>
+            <div class="links"><i class="fab fa-linkedin"></i></div>
+            <div class="links"><i class="fab fa-instagram"></i></div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

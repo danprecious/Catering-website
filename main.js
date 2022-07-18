@@ -19,3 +19,8 @@ closeButton.addEventListener("click", function(){
     navB.style.width = "0";
     bars.style.display = "block";
 })
+
+function bottomFunction() {
+    // document.body.scrollBottom = 0;
+    document.documentElement.scrollBottom = 0;
+  }
