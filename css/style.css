@@ -469,6 +469,7 @@ div{
     background-color: var(--cta--col);
     margin: 4em 0;
     max-height: 35rem;
+    min-width: 18em;
 }
 .tel{
     background-color: var(--cta-contrast);
